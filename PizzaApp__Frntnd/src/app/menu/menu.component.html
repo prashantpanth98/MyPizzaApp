@@ -1,0 +1,22 @@
+<div style="background-color: rgb(165, 213, 255);margin-top: -12px;">
+
+   <button color="accent" mat-button mat-raised-button id = "cartb" (click)="goToCart()">View Cart</button>
+   
+   <div class = "Button">
+    <button color="warn" mat-button mat-raised-button id = "log" (click)="LogOut()">Logout</button>
+   </div>
+
+ <ul>
+
+    <li *ngFor ="let pizzaObj of pizzaMeals">
+        <img src="{{pizzaObj.imageUrl}}" alt="Pizza Image">
+
+        <h1><span id="piznam" class = "pizzaName">  {{pizzaObj.pizzaName}}</span>
+        </h1>
+        <div class = "Button">
+            <button color="primary" mat-button mat-raised-button (click)="addToCart(pizzaObj)">Add To Cart</button>
+         </div>
+    </li>
+ </ul>
+
+</div>

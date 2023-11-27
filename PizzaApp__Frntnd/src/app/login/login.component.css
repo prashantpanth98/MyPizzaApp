@@ -1,0 +1,20 @@
+#lognForm{
+    background-color: rgb(237, 192, 192);
+    width:600px ;
+    position: absolute;
+    margin: 50px;
+}
+
+input {
+    width: 500px;
+}
+mat-form-field{
+    width: 500px;
+    position: inherit;
+    margin: 20px;
+    margin-left: 50px;
+}
+#logButton{
+    margin-bottom: 10px;
+    margin-left: 50px;
+}

@@ -1,0 +1,31 @@
+
+#pizzaoutlet{
+    font-size:x-large; 
+    font-weight:500; 
+    color: rgb(1, 255, 85);
+    margin-right: 400px;
+    margin-top: 10px;
+}
+
+#navb{
+    background-color: rgb(151, 17, 248); 
+    height: 80px;
+    margin-top: -16px;
+    width: max-content;
+}
+
+#pizzaoutlet2{
+    font-size:x-large; 
+    font-weight:500; 
+    color: rgb(236, 255, 205);
+    margin-inline: 90px;
+}
+
+#welcm{
+    margin-left: 280px;
+    margin-top: 10px;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    color: chartreuse;
+}

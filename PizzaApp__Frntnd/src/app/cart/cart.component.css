@@ -1,0 +1,36 @@
+
+h1
+{
+    text-align: center;
+    font-size: xx-large;
+    color:rgb(180, 228, 7);
+    margin-top:35px;
+    font-weight:500;
+    position: absolute;
+    margin-top:1px;
+    margin-left:36px;
+    display: flex;
+}
+
+#cartcrd{
+    margin-left:300px;
+    background-color:rgb(218, 6, 215);
+    width: 190px;
+    height: 65px;
+}
+#pisiz{
+height: 120px;
+width: 120px;
+}
+
+h3
+{
+    position: relative;
+    margin-top:45px;
+    margin-left:11px;
+    color:blue;
+}
+#pizzcrd{
+    display: flex;
+    margin-left:20px;
+}

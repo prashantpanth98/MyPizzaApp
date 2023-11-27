@@ -1,0 +1,49 @@
+ul
+{
+    display:flex;
+    justify-content: centre;
+    align-items: centre;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    
+}
+ul>li>img
+{
+    margin:100px;
+    margin-top:40px;
+    height: 200px;
+    width: 222px;
+}
+  
+.pizzaName
+{
+    text-align: center;
+    padding-top:-1000px;
+    font-weight:500;
+    background-color:rgb(64, 201, 59);
+    margin-left: 100px;
+}
+
+#log
+{
+    justify-content:end;
+    margin-left: 1080px;
+    margin-top:15px;
+}
+.Button
+{
+    margin-left:180px;
+}
+
+#cartb
+{
+    margin-left:600px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+span{
+  display: block;
+  padding: 5px;
+}

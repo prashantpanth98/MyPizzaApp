@@ -1,0 +1,14 @@
+<p>
+    <mat-toolbar id=navb>
+      <span id="pizzaoutlet">BROOKLYN PIZZA</span>
+      
+      <span id="welcm" *ngIf="loginValid()">WELCOME {{userName | uppercase | userNamePipe }} !</span>
+
+      <nav><a routerLink=""  id="pizzaoutlet2" class="wwer">REGISTER</a></nav>
+
+      <nav><a routerLink="/login" id="pizzaoutlet2">LOGIN</a></nav>
+
+      <nav><a routerLink="/menu" id="pizzaoutlet2" style="margin-left: 125px;">View PizzaS</a></nav>
+
+    </mat-toolbar>
+  </p>

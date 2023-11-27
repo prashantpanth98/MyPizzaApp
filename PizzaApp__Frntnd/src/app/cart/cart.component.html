@@ -1,0 +1,36 @@
+
+<mat-card id="cartcrd">
+    <mat-card-content>
+        <div>
+            <h1 class="card">CART</h1>
+           <!-- {{reqUser | json}}-->
+        </div></mat-card-content>
+ </mat-card>
+
+  <div>
+    <div id="pizzcrd">
+        <div *ngFor="let pizaOb of cartAllPizza" style="margin-left: 20px;">
+            <img src="{{pizaOb.imageUrl}}"  alt = "pizza images" id="pisiz">
+
+            <h3>PizzaId:{{pizaOb.pizzaId}}</h3>
+            <h3>{{pizaOb.pizzaName}}</h3>
+
+            <!--<button color="accent" mat-button mat-raised-button (click)="Quantity1(pizaOb.pizzaId,pizaOb)">Add Pizza Quantity</button>-->  
+
+            <p>Quantities of Pizza:- {{pizaOb.Quantity}}</p> 
+
+             price: {{pizaOb.totalAmount}}
+
+           <button color="basic" mat-button mat-raised-button (click)="delete(pizaOb)">
+            <mat-icon> remove_shopping_cart </mat-icon> </button>
+        </div>
+    </div>
+
+    <h2 style="margin-left: 30px;">Total Bill: ${{totalBill}}</h2>
+    <button (click)="order()" color="accent" mat-button mat-raised-button style="margin-left: 20px;">Confirm Order</button>
+
+    <!-- <button (click)="getTheUser()">Get the User</button>-->
+    <!-- <app-order *ngIf="isOrderPlaced"></app-order> -->
+  </div>
+
+  

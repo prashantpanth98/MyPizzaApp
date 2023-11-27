@@ -1,0 +1,65 @@
+<div class="container" id="custForm">
+  <form class="form" (ngSubmit)="onSubmit()" [formGroup]="registrationForm" >
+          <div class = "row" >
+              <div class="col">
+                  <mat-form-field appearance="fill">
+                      <input matInput placeholder="User Name" type="text" id="userName" formControlName="userName" class="example-full-width"/>
+                      <mat-error *ngIf="userName?.errors?.['required']">
+                        User Name is required.
+                      </mat-error>
+                      <mat-error *ngIf="userName?.errors?.['minlength']">
+                          User Name should have minimum of 4 characters.
+                      </mat-error>
+                      <mat-error *ngIf="userName?.errors?.['pattern']">
+                          User Name should only contain alphabets.
+                      </mat-error>
+                  </mat-form-field>
+              </div>
+            </div>
+
+            <div class = "row">
+                <div class="col">
+                    <mat-form-field appearance="fill">
+                        <input matInput type="text" placeholder="Email" id="email" formControlName="email">
+                        <mat-error *ngIf="email?.errors?.['required']">
+                             Email is required.
+                            </mat-error>
+                            <mat-error *ngIf="email?.errors?.['pattern']">
+                                 Enter a valid email
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+          <div class="row">
+              <div class="col">
+                  <mat-form-field appearance="fill">
+                      <input matInput type="password" placeholder="Password" id="password" formControlName="password">
+                      <mat-error *ngIf="password?.errors?.['required']">
+                          Password is required.
+                      </mat-error>
+                      <mat-error *ngIf="password?.errors?.['pattern']">
+                          Password should have min 8 letters, with atleast one upper and lower case letter & a number.
+                      </mat-error>
+                  </mat-form-field>
+              </div>
+           </div>
+           <div class="row">
+              <div class="col" id = "p1">
+                  <mat-form-field appearance="fill">
+                      <input matInput type="text" placeholder="Phone Number" id="phoneNo" formControlName="phoneNo">
+                      <mat-error *ngIf="phoneNo?.errors?.['required']">
+                          Phone Number is required.
+                      </mat-error>
+                      <mat-error *ngIf="phoneNo?.errors?.['pattern']">
+                          Valid phone number contains 10 digits starting with 7/8/9
+                      </mat-error>
+                  </mat-form-field>   
+              </div>
+            </div>
+              <button color="primary" mat-button mat-raised-button [disabled]="!registrationForm.valid" type="submit" id="subButton">
+                Submit</button> 
+            </form>
+</div>
+
+
